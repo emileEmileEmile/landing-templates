@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SaaS Landing Page Template
 
-## Getting Started
+A modern, fully-responsive SaaS landing page built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+![SaaS Landing Page](./screenshot-full.png)
 
+## 🌟 Features
+
+- ✨ **14 Professional Sections** - Complete landing page with all essential components
+- 🎨 **Modern Animations** - Smooth Framer Motion animations throughout
+- 📱 **Fully Responsive** - Perfect on mobile, tablet, and desktop
+- ⚡ **Lightning Fast** - Built with Next.js 15 and optimized for performance
+- 🎯 **Conversion Optimized** - Strategic CTAs and social proof elements
+- 🔧 **Easy to Customize** - Clean code structure for quick client customization
+
+## 📦 Sections Included
+
+1. **Loading Animation** - Smooth page load experience
+2. **Sticky Navigation** - Professional navbar with smooth scroll
+3. **Hero Section** - Animated gradient with compelling CTAs
+4. **Social Proof Ticker** - Scrolling company logos
+5. **Stats Counter** - Animated numbers (10,000+ users, 99.9% uptime)
+6. **Features Grid** - 6 feature cards with icons
+7. **How It Works** - 3-step process visualization
+8. **Pricing Table** - 3-tier pricing with "most popular" badge
+9. **Testimonials** - Customer reviews with avatars
+10. **Final CTA** - Last conversion opportunity
+11. **FAQ Section** - Expandable accordion (8 questions)
+12. **Contact Form** - Working form with validation
+13. **Footer** - Professional footer with links
+14. **Scroll-to-Top Button** - Appears when scrolling
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Components:** shadcn/ui
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+
+## 🚀 Live Demo
+
+[View Live Demo](https://your-demo-url.vercel.app/saas)
+
+## 📸 Screenshots
+
+### Hero Section
+![Hero](./1.png)
+![Hero](./1_5.png)
+
+### Features Grid
+![Features](./2.png)
+
+### Pricing Table
+![Pricing](./3.png)
+
+### How it works
+![Pricing](./4.png)
+
+### Contact 
+![Pricing](./5.png)
+
+### Mobile Responsive
+![Mobile](./screenshot-mobile.png)
+
+## ⚙️ Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repository
+git clone https://github.com/yourusername/landing-templates.git
+
+# Navigate to project
+cd landing-templates
+
+# Install dependencies
+pnpm install
+
+# Run development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/saas](http://localhost:3000/saas) to view the template.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Colors
+Update the color scheme in `tailwind.config.ts` or directly in component classes.
 
-## Learn More
+### Content
+All text content is hardcoded in components for easy customization:
+- Hero: `components/sections/Hero.tsx`
+- Features: `components/sections/Features.tsx`
+- Pricing: `components/sections/Pricing.tsx`
+- etc.
 
-To learn more about Next.js, take a look at the following resources:
+### Sections
+Remove unwanted sections by simply commenting them out in `app/saas/page.tsx`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a `.env.local` file:
+```env
+RESEND_API_KEY=your_resend_api_key_here
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploy to Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import your repository
+4. Add environment variables
+5. Deploy!
+
+Your site will be live in minutes at `your-project.vercel.app`
+
+## 📄 License
+
+This template is available for commercial use. Feel free to customize and sell to clients.
+
+## 👨‍💻 Author
+
+Built by Emile
+- Portfolio: [your-portfolio.com]
+- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: your.email@example.com
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Animations powered by [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+**Note:** This is a template for client projects. Customize colors, content, and sections based on client needs.
