@@ -2,8 +2,6 @@
 
 A modern, fully-responsive SaaS landing page built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
 
-![SaaS Landing Page](./screenshot-full.png)
-
 ## 🌟 Features
 
 - ✨ **14 Professional Sections** - Complete landing page with all essential components
@@ -46,24 +44,16 @@ A modern, fully-responsive SaaS landing page built with Next.js 15, TypeScript, 
 
 ## 📸 Screenshots
 
-### Hero Section
 ![Hero](./1.png)
-![Hero](./1_5.png)
+![Hero](./2.png)
+![Hero](./3.png)
+![Hero](./4.png)
+![Hero](./5.png)
+![Hero](./6.png)
+![Hero](./7.png)
+![Hero](./8.png)
+![Hero](./9.png)
 
-### Features Grid
-![Features](./2.png)
-
-### Pricing Table
-![Pricing](./3.png)
-
-### How it works
-![Pricing](./4.png)
-
-### Contact 
-![Pricing](./5.png)
-
-### Mobile Responsive
-![Mobile](./screenshot-mobile.png)
 
 ## ⚙️ Installation
 ```bash
