@@ -52,7 +52,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -71,7 +71,7 @@ export default function Features() {
         </motion.div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -82,7 +82,7 @@ export default function Features() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Card className="p-8 h-full hover:shadow-xl transition-shadow duration-300 border-2 hover:border-purple-200">
+                <Card className="p-6 md:p-8 h-full hover:shadow-xl transition-shadow duration-300 border-2 hover:border-purple-200">
                   <div className={`w-12 h-12 rounded-lg bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center mb-4`}>
                     <Icon className={`w-6 h-6 ${feature.color}`} />
                   </div>
