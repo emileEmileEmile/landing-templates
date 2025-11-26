@@ -30,24 +30,24 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-white">
+    <section id="testimonials" className="py-12 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-8 md:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-2 md:mb-4">
             Loved by thousands of users
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto px-2">
             Don't just take our word for it. Here's what our customers have to say.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -56,28 +56,28 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="p-8 h-full hover:shadow-xl transition-shadow duration-300">
-                <div className="flex gap-1 mb-4">
+              <Card className="p-5 md:p-8 h-full hover:shadow-xl transition-shadow duration-300">
+                <div className="flex gap-0.5 md:gap-1 mb-3 md:mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
                 
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6 leading-relaxed">
                   "{testimonial.content}"
                 </p>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 md:gap-4">
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full"
+                    className="w-10 h-10 md:w-12 md:h-12 rounded-full"
                   />
                   <div>
-                    <p className="font-bold text-slate-900">
+                    <p className="text-sm md:text-base font-bold text-slate-900">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-xs md:text-sm text-gray-600">
                       {testimonial.role}
                     </p>
                   </div>

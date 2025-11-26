@@ -47,18 +47,18 @@ function FAQItem({ question, answer, index }: { question: string; answer: string
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
       className="border-b border-gray-200 last:border-0"
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full py-6 flex items-center justify-between text-left hover:text-purple-600 transition-colors"
+        className="w-full py-3 md:py-6 flex items-center justify-between text-left hover:text-purple-600 transition-colors"
       >
-        <span className="text-lg font-semibold text-slate-900 pr-8">
+        <span className="text-sm md:text-lg font-semibold text-slate-900 pr-4 md:pr-8">
           {question}
         </span>
         <ChevronDown 
-          className={`w-5 h-5 text-gray-600 flex-shrink-0 transition-transform duration-300 ${
+          className={`w-4 h-4 md:w-5 md:h-5 text-gray-600 flex-shrink-0 transition-transform duration-300 ${
             isOpen ? 'rotate-180' : ''
           }`}
         />
@@ -70,7 +70,7 @@ function FAQItem({ question, answer, index }: { question: string; answer: string
         transition={{ duration: 0.3 }}
         className="overflow-hidden"
       >
-        <p className="pb-6 text-gray-600 leading-relaxed">
+        <p className="pb-3 md:pb-6 text-xs md:text-base text-gray-600 leading-relaxed">
           {answer}
         </p>
       </motion.div>
@@ -80,24 +80,24 @@ function FAQItem({ question, answer, index }: { question: string; answer: string
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-24 bg-gradient-to-br from-slate-50 to-purple-50">
+    <section id="faq" className="py-12 md:py-24 bg-gradient-to-br from-slate-50 to-purple-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-6 md:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-2 md:mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto px-2">
             Everything you need to know about our platform and billing.
           </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-4 md:p-8 lg:p-12">
           {faqs.map((faq, index) => (
             <FAQItem 
               key={index}
@@ -113,14 +113,14 @@ export default function FAQ() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center mt-12"
+          className="text-center mt-6 md:mt-12"
         >
-          <p className="text-gray-600 mb-4">
+          <p className="text-sm md:text-base text-gray-600 mb-2 md:mb-4">
             Still have questions?
           </p>
           <a 
             href="#contact" 
-            className="text-purple-600 hover:text-purple-700 font-semibold"
+            className="text-sm md:text-base text-purple-600 hover:text-purple-700 font-semibold"
           >
             Contact our support team →
           </a>
